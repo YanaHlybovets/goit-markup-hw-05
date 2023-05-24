@@ -135,6 +135,7 @@ body {
     color: var(--primary-text-color-theme-light);
     padding: 24px 0;
     position: relative;
+    color: #404BBF;
     transition: color var(--transition-duration-function);
 }
 
@@ -644,7 +645,7 @@ body {
 
 .modal {
     width: 408px;
-    min-height: 576px;
+    min-height: 584px;
     top: 50%;
     left: 50%;
     position: absolute;
