@@ -108,34 +108,41 @@ body {
 
 .menu-item {
     flex-direction: row;
-    padding: 24px 0;
+    padding: 24px 0 0;
 }
 
-.menu-link::after {
+.current-page::after {
     content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
+    width: 100%;
     height: 4px;
-    background-color: #404bbf;
+    left: 0;
+    margin-top: 20px;
+    display: block;
     border-radius: 2px;
-    transition: color var(--transition-duration-function);
+    background-color: #404BBF;
 }
 
-.menu-link:hover,
-.menu-link:focus {
+.current-page {
     color: #404BBF;
 }
+
+.menu-color:hover,
+.menu-color:focus {
+    color: #404BBF;
+}
+
 
 .menu-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color-theme-light);
     padding: 24px 0;
     position: relative;
-    color: #404BBF;
+}
+
+.menu-color {
+    color: var(--primary-text-color-theme-light);
     transition: color var(--transition-duration-function);
 }
 
@@ -264,7 +271,7 @@ body {
 }
 
 .content-page-portfolio {
-    background: #FCFCFC;
+    background: #FFFFFF;
     padding: 96px 0 120px
 }
 
@@ -359,6 +366,7 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
+    margin-bottom: 8px;
 }
 
 .content-team-title {
