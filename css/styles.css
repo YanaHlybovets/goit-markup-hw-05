@@ -108,7 +108,6 @@ body {
 
 .menu-item {
     flex-direction: row;
-    padding: 24px 0 0;
 }
 
 .current-page::after {
@@ -116,14 +115,17 @@ body {
     width: 100%;
     height: 4px;
     left: 0;
+    bottom: -1px;
     margin-top: 20px;
     display: block;
     border-radius: 2px;
     background-color: #404BBF;
+    position: absolute;
 }
 
 .current-page {
     color: #404BBF;
+    transition: color var(--transition-duration-function);
 }
 
 .menu-color:hover,
